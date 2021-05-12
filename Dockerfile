@@ -16,6 +16,8 @@ RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyri
 #Instalacion propiamente dicha
 RUN apt-get update && apt-get install google-cloud-sdk -y
 
+ADD glass-cycle-309514-d0f1ab2ec8df.json to /root
+
 RUN gcloud auth configure-docker
 
 RUN gcloud init
