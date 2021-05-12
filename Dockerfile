@@ -15,7 +15,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FEEA9169307EA071
 #Instalacion propiamente dicha
 RUN apt-get update && apt-get install google-cloud-sdk -y
 RUN apt-get install wget -y
-RUN wget https://github.com/an10nsua1/DockerRepo/blob/main/credentials.json ; gcloud auth activate-service-account --key-file=./credsentials.json
+RUN wget https://github.com/an10nsua1/DockerRepo/blob/main/credentials.json ; gcloud auth activate-service-account --key-file=./credentials.json
 
 #Descarga del .sh
 RUN gsutil -m cp -r gs://bucket_ibgateway_public/publicMachine.sh /root/
