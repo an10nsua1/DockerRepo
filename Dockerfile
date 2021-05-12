@@ -14,7 +14,7 @@ RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyri
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FEEA9169307EA071
 #Instalacion propiamente dicha
 RUN apt-get update && apt-get install google-cloud-sdk -y
-
+RUN apt-get install wget -y
 RUN wget https://github.com/an10nsua1/DockerRepo/blob/main/glass-cycle-309514-d0f1ab2ec8df.json
 
 RUN gcloud auth activate-service-account --key-file=glass-cycle-309514-d0f1ab2ec8df.json
