@@ -16,6 +16,8 @@ RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyri
 #Instalacion propiamente dicha
 RUN apt-get update && apt-get install google-cloud-sdk -y
 
+RUN gcloud auth configure-docker
+
 RUN gcloud init
 
 #Descarga del .sh
