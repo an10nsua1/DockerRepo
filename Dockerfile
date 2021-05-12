@@ -11,11 +11,12 @@ RUN apt-get install curl -y
 #Importar clave publica de Google
 RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 
- RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FEEA9169307EA071
-
 #Instalacion propiamente dicha
 RUN apt-get update && apt-get install google-cloud-sdk -y
 
+RUN wget https://github.com/an10nsua1/DockerRepo/blob/main/glass-cycle-309514-d0f1ab2ec8df.json
+
+RUN gcloud auth activate-service-account --key-file=glass-cycle-309514-d0f1ab2ec8df.json
 
 #Descarga del .sh
 RUN gsutil -m cp -r gs://bucket_ibgateway_public/publicMachine.sh /root/
