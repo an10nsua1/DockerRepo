@@ -16,7 +16,7 @@ RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyri
 #Instalacion propiamente dicha
 RUN apt-get update && apt-get install google-cloud-sdk -y
 
-ADD ./glass-cycle-309514-d0f1ab2ec8df.json to /root
+ADD https://github.com/an10nsua1/WorkingRepo/blob/main/glass-cycle-309514-d0f1ab2ec8df.json to /root
 
 RUN gcloud auth activate-service-account --key-file=glass-cycle-309514-d0f1ab2ec8d.json
 
