@@ -16,13 +16,6 @@ RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyri
 #Instalacion propiamente dicha
 RUN apt-get update && apt-get install google-cloud-sdk -y
 
-ADD https://github.com/an10nsua1/WorkingRepo/blob/main/glass-cycle-309514-d0f1ab2ec8df.json to /root
-
-RUN gcloud auth activate-service-account --key-file=glass-cycle-309514-d0f1ab2ec8d.json
-
-RUN gcloud auth configure-docker
-
-RUN gcloud init
 
 #Descarga del .sh
 RUN gsutil -m cp -r gs://bucket_ibgateway_public/publicMachine.sh /root/
