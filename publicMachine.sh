@@ -3,8 +3,7 @@ echo "Downloading VNC"
 apt install vim wget curl net-tools unzip xvfb x11vnc
 apt install openjdk-8-jdk
 Xvfb :1 -ac -screen 0 1024x768x24 &
-export DISPLAY=:1
-x11vnc -ncache 10 -ncache_cr -display :1 -forever -shared -logappend /var/log/x11vnc.log -bg -noipv6
+export DISPLAY=:1 ; x11vnc -ncache 10 -ncache_cr -display :1 -forever -shared -logappend /var/log/x11vnc.log -bg -noipv6
 echo "VNC initialized"
 
 cd /root
