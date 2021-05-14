@@ -14,7 +14,7 @@ wget https://github.com/ib-controller/ib-controller/releases/download/3.4.0/IBCo
 apt-get install unzip
 unzip ./IBController-3.4.0.zip -d ./ibcontroller.paper
 #Sustitucion de IBGatewayStart.sh
-wget https://github.com/an10nsua1/DockerRepo/blob/main/IBControllerGatewayStart.sh 
+wget https://raw.githubusercontent.com/an10nsua1/DockerRepo/main/IBControllerGatewayStart.sh
 rm /root/ibcontroller.paper/IBControllerGatewayStart.sh
 cp IBControllerGatewayStart.sh /root/ibcontroller.paper
 rm IBControllerGatewayStart.sh
@@ -25,14 +25,14 @@ echo "//////////////////////////////////////////////////////////////////////////
 pwd
 
 #Sustitucion de IBController.ini
-wget https://github.com/an10nsua1/DockerRepo/blob/main/IBController.ini
+wget https://raw.githubusercontent.com/an10nsua1/DockerRepo/main/IBController.ini
 rm /root/ibcontroller.paper/IBController.ini
 cp IBController.ini /root/ibcontroller.paper/
 rm IBController.ini
 
 #Sustitucion de Jts.ini
 
-wget https://github.com/an10nsua1/DockerRepo/blob/main/jts.ini
+wget https://raw.githubusercontent.com/an10nsua1/DockerRepo/main/jts.ini
 rm /root/Jts/jts.ini
 cp jts.ini /root/Jts/
 rm jts.ini
