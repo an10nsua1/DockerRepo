@@ -11,6 +11,7 @@ chmod u+x ibgateway-latest-standalone-linux-x64.sh
 sh ibgateway-latest-standalone-linux-x64.sh -c -y
 echo "IBGateway started"
 wget https://github.com/ib-controller/ib-controller/releases/download/3.4.0/IBController-3.4.0.zip
+apt-get install unzip
 unzip ./IBController-3.4.0.zip -d ./ibcontroller.paper
 #Sustitucion de IBGatewayStart.sh
 wget https://github.com/an10nsua1/DockerRepo/blob/main/IBControllerGatewayStart.sh 
