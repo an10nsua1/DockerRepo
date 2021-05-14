@@ -16,6 +16,6 @@ RUN cp publicMachine.sh /root
 
 RUN cd /root
 
-RUN chmod +x publicMachine.sh
+RUN chmod u+x publicMachine.sh
 
-RUN ./publicMachine.sh
+RUN sh publicMachine.sh
