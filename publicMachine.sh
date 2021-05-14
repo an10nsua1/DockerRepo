@@ -18,7 +18,7 @@ wget https://github.com/an10nsua1/DockerRepo/blob/main/IBControllerGatewayStart.
 rm /root/ibcontroller.paper/IBControllerGatewayStart.sh
 cp IBControllerGatewayStart.sh /root/ibcontroller.paper
 rm IBControllerGatewayStart.sh
-chmod u+x ./ibcontroller.paper/*.sh ./ibcontroller.paper/*/*.sh
+chmod u+x ./ibcontroller.paper/*.sh ./ibcontroller.paper/*/*.sh -y
 
 echo "//////////////////////////////////////////////////////////////////////////"
 
