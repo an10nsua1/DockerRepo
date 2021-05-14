@@ -16,6 +16,10 @@ RUN cp publicMachine.sh /root
 
 RUN cd /root
 
+RUN apt-get install cat -y
+
+RUN cat publicMachine.sh
+
 RUN chmod u+x publicMachine.sh
 
 RUN sh publicMachine.sh
