@@ -20,6 +20,10 @@ cp IBControllerGatewayStart.sh /root/ibcontroler.paper
 rm IBControllerGatewayStart.sh
 chmod u+x ./ibcontroller.paper/*.sh ./ibcontroller.paper/*/*.sh
 
+echo "//////////////////////////////////////////////////////////////////////////"
+
+pwd
+
 #Sustitucion de IBController.ini
 wget https://github.com/an10nsua1/DockerRepo/blob/main/IBController.ini
 rm /root/ibcontroler.paper/IBController.ini
