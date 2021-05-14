@@ -10,7 +10,7 @@ expose 4001
 expose 4002
 expose 7462
 
-RUN wget https://github.com/an10nsua1/DockerRepo/blob/main/publicMachine.sh
+RUN wget 'https://github.com/an10nsua1/DockerRepo/blob/main/publicMachine.sh'
 
 RUN cp publicMachine.sh /root
 
