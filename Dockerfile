@@ -5,6 +5,7 @@ RUN apt upgrade -y
 
 RUN apt-get install wget -y
 
+WORKDIR /root
 expose 5900
 expose 4001
 expose 4002
