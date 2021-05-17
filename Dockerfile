@@ -13,10 +13,6 @@ expose 7462
 
 RUN wget https://raw.githubusercontent.com/an10nsua1/DockerRepo/main/publicMachine.sh
 
-RUN cp publicMachine.sh /root
-
-RUN cd /root
-
 
 RUN cat publicMachine.sh
 
