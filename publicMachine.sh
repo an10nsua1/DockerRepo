@@ -15,7 +15,7 @@ apt-get install unzip
 unzip ./IBController-3.4.0.zip -d ./ibcontroller.paper
 #Sustitucion de IBGatewayStart.sh
 wget https://raw.githubusercontent.com/an10nsua1/DockerRepo/main/IBControllerGatewayStart.sh
- sudo ls -l
+ls -l
 echo "/////////////////////////////////////////////////////////////////////"
 rm ./ibcontroller.paper/IBControllerGatewayStart.sh
 cp IBControllerGatewayStart.sh ./ibcontroller.paper
