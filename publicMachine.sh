@@ -8,7 +8,7 @@ cd /root
 echo "Initiating IBGateway..."
 wget https://download2.interactivebrokers.com/installers/ibgateway/latest-standalone/ibgateway-latest-standalone-linux-x64.sh
 chmod u+x ibgateway-latest-standalone-linux-x64.sh
-yes "/root/Jts/ibgateway/984" y | sh ibgateway-latest-standalone-linux-x64.sh -c
+yes n| sh ibgateway-latest-standalone-linux-x64.sh -c
 echo "IBGateway started"
 wget https://github.com/ib-controller/ib-controller/releases/download/3.4.0/IBController-3.4.0.zip
 apt-get install unzip
