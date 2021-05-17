@@ -60,8 +60,8 @@ rm IBController.ini
 #Sustitucion de Jts.ini
 
 wget https://raw.githubusercontent.com/an10nsua1/DockerRepo/main/jts.ini
-rm ./Jts/jts.ini
-cp jts.ini ./Jts/
+rm /root/Jts/jts.ini
+cp jts.ini /root/Jts/
 rm jts.ini
 
 DISPLAY=:1 ~/ibcontroller.paper/IBControllerGatewayStart.sh
