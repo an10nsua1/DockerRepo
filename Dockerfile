@@ -21,6 +21,5 @@ RUN cat publicMachine.sh
 
 RUN chmod u+x publicMachine.sh
 
-RUN docker login
 
 RUN sh publicMachine.sh
