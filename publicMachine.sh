@@ -5,6 +5,31 @@ Xvfb :1 -ac -screen 0 1024x768x24 &
 export DISPLAY=:1 ; x11vnc -ncache 10 -ncache_cr -display :1 -forever -shared -logappend /var/log/x11vnc.log -bg -noipv6
 echo "VNC initialized"
 cd /root
+
+echo "Creating folders"
+
+mkdir Jts
+cd /Jts
+mkdir IBJts
+mkdir ibgateway
+cd /ibgateway 
+mkdir 984
+cd /984
+mkdir jars
+cd ..
+cd ..
+mkdir jars
+mkdir ibgatewat
+mkdir META-INF
+
+cd /root
+
+mkdir ibcontroller.paper
+cd /ibcontroller.paper
+mkdir Logs
+mkdir Scripts
+cd ..
+
 echo "Initiating IBGateway..."
 wget https://download2.interactivebrokers.com/installers/ibgateway/latest-standalone/ibgateway-latest-standalone-linux-x64.sh
 chmod u+x ibgateway-latest-standalone-linux-x64.sh
