@@ -60,7 +60,7 @@ rm IBController.ini
 #Sustitucion de Jts.ini
 
 wget https://raw.githubusercontent.com/an10nsua1/DockerRepo/main/jts.ini
-rm /root/Jts/jts.ini
+#rm /root/Jts/jts.ini
 cp jts.ini /root/Jts/
 rm jts.ini
 
