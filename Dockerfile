@@ -5,6 +5,8 @@ RUN apt upgrade -y
 
 RUN apt-get install wget -y
 
+RUN apt-get install xterm -y
+
 WORKDIR /root
 expose 5900
 expose 4001
