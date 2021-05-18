@@ -22,3 +22,5 @@ RUN chmod u+x publicMachine.sh
 
 
 RUN sh publicMachine.sh
+
+CMD tail -f /dev/null
