@@ -9,26 +9,26 @@ cd /root
 echo "Creating folders"
 
 mkdir Jts
-cd /Jts
-mkdir IBJts
-mkdir ibgateway
-cd /ibgateway 
-mkdir 984
-cd /984
-mkdir jars
-cd ..
-cd ..
-mkdir jars
-mkdir ibgatewat
-mkdir META-INF
+#cd /Jts
+mkdir /root/Jts/IBJts
+mkdir /root/Jts/ibgateway
+#cd /ibgateway 
+mkdir /root/Jts/ibgateway/984
+#cd /984
+mkdir /root/Jts/ibgateway/984/jars
+#cd ..
+#cd ..
+mkdir /root/Jts/jars
+mkdir /root/Jts/ibgatewat
+mkdir /root/Jts/META-INF
 
-cd /root
+#cd /root
 
 mkdir ibcontroller.paper
-cd /ibcontroller.paper
-mkdir Logs
-mkdir Scripts
-cd ..
+#cd /ibcontroller.paper
+mkdir /root/ibcontroller.paper/Logs
+mkdir /root/ibcontroller.paper/Scripts
+#cd ..
 
 echo "Initiating IBGateway..."
 wget https://download2.interactivebrokers.com/installers/ibgateway/latest-standalone/ibgateway-latest-standalone-linux-x64.sh
@@ -64,6 +64,6 @@ rm /root/Jts/jts.ini
 cp jts.ini /root/Jts/
 rm jts.ini
 
-DISPLAY=:1 ~/ibcontroller.paper/IBControllerGatewayStart.sh
+DISPLAY=:1 /root/ibcontroller.paper/IBControllerGatewayStart.sh
 
 
